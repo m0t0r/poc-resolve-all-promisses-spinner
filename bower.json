@@ -1,0 +1,14 @@
+{
+  "name": "poc-resolve-all-promisses-spinner",
+  "version": "0.0.1",
+  "homepage": "https://github.com/m0t0r/poc-resolve-all-promisses-spinner",
+  "authors": [
+    "Vitaly <motor.kodlife@gmail.com>"
+  ],
+  "description": "POC for a spinner",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true
+}

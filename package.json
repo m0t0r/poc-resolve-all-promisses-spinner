@@ -1,0 +1,25 @@
+{
+  "name": "poc-resolve-all-promisses-spinner",
+  "version": "1.0.0",
+  "description": "A POC for spinner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m0t0r/poc-resolve-all-promisses-spinner.git"
+  },
+  "keywords": [
+    "spinner",
+    "promises",
+    "app",
+    "angularjs"
+  ],
+  "author": "Vitaly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m0t0r/poc-resolve-all-promisses-spinner/issues"
+  },
+  "homepage": "https://github.com/m0t0r/poc-resolve-all-promisses-spinner"
+}
