@@ -23,10 +23,12 @@
   },
   "homepage": "https://github.com/m0t0r/poc-resolve-all-promisses-spinner",
   "devDependencies": {
+    "gulp": "^3.8.9",
     "gulp-jshint": "~1.8.5",
     "jshint-stylish": "~1.0.0",
     "karma": "~0.12.24",
     "karma-chrome-launcher": "~0.1.5",
-    "karma-jasmine": "~0.1.5"
+    "karma-jasmine": "~0.1.5",
+    "karma-phantomjs-launcher": "^0.1.4"
   }
 }
