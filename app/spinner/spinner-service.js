@@ -1,7 +1,7 @@
 angular
   .module('spinnerApp')
   .factory('SpinnerService', function($q) {
-    var status = false;
+
     return {
       activateController: activateController
     };
