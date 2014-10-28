@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.css"/>
 </head>
 <body ng-app="spinnerApp">
-    <div class="container" ng-controller="AppCtrl">
+    <div class="container" ng-controller="AppCtrl" ng-init="init()">
         <div style="margin-top: 25px;" class="jumbotron">
             <h1>A POC for data loading spinner</h1>
         </div>
         <div class="lead">Simple random data</div>
+        <p><a class="btn btn-success" ng-click="init()">Update data</a></p>
         <table class="table table-hover">
             <tr>
                 <th>First name</th>
@@ -33,5 +34,6 @@
     <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
     <script src="app/app.js"></script>
     <script src="app/data/load-data-service.js"></script>
+    <script src="app/spinner/spinner-service.js"></script>
 </body>
 </html>
