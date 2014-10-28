@@ -16,7 +16,7 @@ In order to quickly check just run:
 ```
 python -m SimpleHTTPServer 8000
 ```
-and the go to ```http://localhost:8000/#/```
+and then go to ```http://localhost:8000/#/```
 
 ## Test
 

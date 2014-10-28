@@ -23,12 +23,21 @@ describe('AppCtrl', function() {
         'loadDataService': loadDataService
       });
     };
+
+    $httpBackend.expectJSONP('http://www.filltext.com/?callback=JSON_CALLBACK&rows=10&fname={firstName}&lname={lastName}&company={business}&email={email}&delay=3')
+      .respond(mockData);
+    $httpBackend.expectJSONP('http://www.filltext.com/?callback=JSON_CALLBACK&rows=10&company={business}&email={email}&delay=1')
+      .respond([]);
   }));
 
   it('should be able to load dummy data', function() {
     $httpBackend.expectJSONP('http://www.filltext.com/?callback=JSON_CALLBACK&rows=10&fname={firstName}&lname={lastName}&company={business}&email={email}&delay=3')
       .respond(mockData);
+    $httpBackend.expectJSONP('http://www.filltext.com/?callback=JSON_CALLBACK&rows=10&company={business}&email={email}&delay=1')
+      .respond([]);
+
     getAppCtrl();
+    $scope.init();
     $httpBackend.flush();
 
     expect($scope.data).toBeDefined();
