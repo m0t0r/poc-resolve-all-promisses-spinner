@@ -2,9 +2,36 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>POC: Spinner App</title>
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.css"/>
 </head>
-<body>
+<body ng-app="spinnerApp">
+    <div class="container" ng-controller="AppCtrl">
+        <div style="margin-top: 25px;" class="jumbotron">
+            <h1>A POC for data loading spinner</h1>
+        </div>
+        <div class="lead">Simple random data</div>
+        <table class="table table-hover">
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Company</th>
+                <th>Email</th>
+            </tr>
+            <tr ng-repeat="d in data">
+                <td>{{ d.fname }}</td>
+                <td>{{ d.lname }}</td>
+                <td>{{ d.company }}</td>
+                <td>{{ d.email }}</td>
+            </tr>
+        </table>
+    </div>
 
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/data/load-data-service.js"></script>
 </body>
 </html>
